@@ -3,6 +3,9 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 
+"syntax highlighting
+syntax on
+
 " Setting line numbers
 set number
 
