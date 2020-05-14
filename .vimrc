@@ -6,6 +6,8 @@ set expandtab
 "syntax highlighting
 syntax on
 
+set background=dark
+
 " Setting line numbers
 set number
 
