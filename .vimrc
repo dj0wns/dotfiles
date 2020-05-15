@@ -3,6 +3,9 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 
+" Disable loud beep
+set visualbell
+
 "syntax highlighting
 syntax on
 
