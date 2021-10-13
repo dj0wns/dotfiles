@@ -43,4 +43,12 @@ set matchtime=3
 set statusline="%f%m%r%h%w [%Y] [0x%02.2B]%< %F%=%4v,%4l %3p%% of %L"
 set laststatus=2
 
-match ErrorMsg '\%>80v.\+'
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+match ExtraWhitespace  /\s\+\%#\@<!$/
+
+highlight ColorColumn ctermbg=red guibg=red
+call matchadd('ColorColumn', '\%81v\s*\zs\S', 100)
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
