@@ -4,7 +4,7 @@ set tabstop=2
 set expandtab
 
 " Disable loud beep
-set visualbell
+set belloff=all
 
 "syntax highlighting
 syntax on
