@@ -1,6 +1,10 @@
 DIR=$(shell pwd)
 
 all:
+	touch ${HOME}/.vimrc
+	touch ${HOME}/.bashrc
+	touch ${HOME}/.config/i3/config
+	touch ${HOME}/.config/i3status/config
 	rm ${HOME}/.vimrc
 	rm ${HOME}/.bashrc
 	rm ${HOME}/.config/i3/config
